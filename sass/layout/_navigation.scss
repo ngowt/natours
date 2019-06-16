@@ -103,6 +103,7 @@
   &__checkbox:checked ~ &__nav {
     width: 100vw;
     opacity: 1;
+    visibility: visible;
   }
 
   &__icon {
