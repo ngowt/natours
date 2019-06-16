@@ -687,7 +687,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100vw;
-  opacity: 1; }
+  opacity: 1;
+  visibility: visible; }
 
 .navigation__icon {
   position: relative;
