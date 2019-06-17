@@ -8,20 +8,45 @@
         z-index: 10;
         transition: all .2s;
         outline-offset: 1rem;
+
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33333%;
+            box-shadow: 0.1 1.5rem 3rem rgba($color-black, .2);
+        }
     
         &--p1 {
             left: 5rem;
             top: -2rem;
+
+            @include respond(tab-port) {
+                top: 0;
+                left: 0;
+                transform: scale(1.2);
+            }
         }
 
         &--p2 {
             left: 15rem;
             top: 6rem;
+
+            @include respond(tab-port) {
+                top: 0;
+                left: 0;
+                transform: scale(1.2) translate(-10%, -10%);
+            }
         }
 
         &--p3 {
             left: -3rem;
             top: 13rem;
+
+            @include respond(tab-port) {
+                top: 0;
+                left: 0;
+                transform: scale(1.2) translateX(-30%);
+            }
         }
 
         &:hover {
